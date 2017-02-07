@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  SearchJAPAN
 //
 //  Created by 渡辺　雄貴 on 2017/02/06.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    // ステータスバーの高さ
-    let statusBarHeight = UIApplication.shared.statusBarFrame.height
+    //DetailViewControllerのインスタンス
+    let detailViewController: UIViewController = DetailViewController()
     // RequestAPIのインスタンス
     let requestAPI = RequestAPI()
     // PrefectureListのインスタンス
@@ -19,7 +19,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //試しにAPIをGETで叩く
         requestAPI.getRequest()
+        
+        self.title = "観光名所一覧"
         
         // UITableView を作成
         let tableView = UITableView()
@@ -27,9 +31,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // サイズと位置調整
         tableView.frame = CGRect(
             x: 0,
-            y: statusBarHeight,
+            y: 0,
             width: self.view.frame.width,
-            height: self.view.frame.height - statusBarHeight
+            height: self.view.frame.height
         )
         
         // Delegate設定
@@ -68,7 +72,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // セルがタップされた時の処理
-        print("タップされたセルのindex番号: \(indexPath.row)")
+        detailViewController.modalTransitionStyle = UIModalTransitionStyle.partialCurl
+        self.navigationController?.pushViewController(detailViewController, animated: true)
+        let backButtonItem = UIBarButtonItem(title: "戻る", style: .plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem = backButtonItem
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
