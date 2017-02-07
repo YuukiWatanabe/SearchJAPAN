@@ -12,9 +12,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // ステータスバーの高さ
     let statusBarHeight = UIApplication.shared.statusBarFrame.height
+    // RequestAPIのインスタンス
+    let requestAPI = RequestAPI()
+    // PrefectureListのインスタンス
+    let prefectureList = PrefectureList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        requestAPI.getRequest()
         
         // UITableView を作成
         let tableView = UITableView()
@@ -48,15 +53,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
         cell.accessoryType = .detailButton
-        cell.textLabel?.text = "セル\(indexPath.row + 1)"
-        cell.detailTextLabel?.text = "\(indexPath.row + 1)番目のセルの説明"
+        cell.textLabel?.text = PrefectureList.prefList[indexPath.row]
+        cell.detailTextLabel?.text = PrefectureList.prefList[indexPath.row] + "の説明"
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // セルの数を設定
-        return 5
+        return PrefectureList.prefList.count
     }
     
     // MARK: - UITableViewDelegate

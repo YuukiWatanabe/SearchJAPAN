@@ -14,6 +14,8 @@
 		139E14751E487AA900C952D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139E14731E487AA900C952D1 /* LaunchScreen.storyboard */; };
 		139E14801E487AA900C952D1 /* SearchJAPANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E147F1E487AA900C952D1 /* SearchJAPANTests.swift */; };
 		139E148B1E487AA900C952D1 /* SearchJAPANUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E148A1E487AA900C952D1 /* SearchJAPANUITests.swift */; };
+		139E14991E487E8A00C952D1 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E14981E487E8A00C952D1 /* RequestAPI.swift */; };
+		139E149D1E49934800C952D1 /* PrefectureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E149C1E49934800C952D1 /* PrefectureList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		139E14861E487AA900C952D1 /* SearchJAPANUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchJAPANUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		139E148A1E487AA900C952D1 /* SearchJAPANUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchJAPANUITests.swift; sourceTree = "<group>"; };
 		139E148C1E487AA900C952D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		139E14981E487E8A00C952D1 /* RequestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
+		139E149C1E49934800C952D1 /* PrefectureList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefectureList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				139E146A1E487AA900C952D1 /* AppDelegate.swift */,
 				139E146C1E487AA900C952D1 /* ViewController.swift */,
+				139E149C1E49934800C952D1 /* PrefectureList.swift */,
+				139E14981E487E8A00C952D1 /* RequestAPI.swift */,
 				139E146E1E487AA900C952D1 /* Main.storyboard */,
 				139E14711E487AA900C952D1 /* Assets.xcassets */,
 				139E14731E487AA900C952D1 /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139E149D1E49934800C952D1 /* PrefectureList.swift in Sources */,
 				139E146D1E487AA900C952D1 /* ViewController.swift in Sources */,
+				139E14991E487E8A00C952D1 /* RequestAPI.swift in Sources */,
 				139E146B1E487AA900C952D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +511,7 @@
 				139E14911E487AA900C952D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		139E14921E487AA900C952D1 /* Build configuration list for PBXNativeTarget "SearchJAPANTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +520,7 @@
 				139E14941E487AA900C952D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		139E14951E487AA900C952D1 /* Build configuration list for PBXNativeTarget "SearchJAPANUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +529,7 @@
 				139E14971E487AA900C952D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
