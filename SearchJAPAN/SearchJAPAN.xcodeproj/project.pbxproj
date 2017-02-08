@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		133945551E4ABCC500672F71 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133945541E4ABCC500672F71 /* DetailTableViewCell.swift */; };
+		133945571E4ACC5400672F71 /* Fuji.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133945561E4ACC5400672F71 /* Fuji.jpg */; };
 		139E146B1E487AA900C952D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E146A1E487AA900C952D1 /* AppDelegate.swift */; };
 		139E146D1E487AA900C952D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E146C1E487AA900C952D1 /* MainViewController.swift */; };
 		139E14701E487AA900C952D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139E146E1E487AA900C952D1 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		133945541E4ABCC500672F71 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		133945561E4ACC5400672F71 /* Fuji.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fuji.jpg; sourceTree = "<group>"; };
 		139E14671E487AA900C952D1 /* SearchJAPAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchJAPAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139E146A1E487AA900C952D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139E146C1E487AA900C952D1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				139E14981E487E8A00C952D1 /* RequestAPI.swift */,
 				139E14711E487AA900C952D1 /* Assets.xcassets */,
 				13D1B3031E49B0E8007A75F1 /* top.jpg */,
+				133945561E4ACC5400672F71 /* Fuji.jpg */,
 				139E146E1E487AA900C952D1 /* Main.storyboard */,
 				139E14731E487AA900C952D1 /* LaunchScreen.storyboard */,
 				139E14761E487AA900C952D1 /* Info.plist */,
@@ -250,6 +253,7 @@
 			files = (
 				139E14751E487AA900C952D1 /* LaunchScreen.storyboard in Resources */,
 				13D1B3041E49B0E8007A75F1 /* top.jpg in Resources */,
+				133945571E4ACC5400672F71 /* Fuji.jpg in Resources */,
 				139E14721E487AA900C952D1 /* Assets.xcassets in Resources */,
 				139E14701E487AA900C952D1 /* Main.storyboard in Resources */,
 			);

@@ -51,7 +51,6 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: customCellIdentifier, for: indexPath) as! DetailTableViewCell
         
         cell.priceLabel.text = "富士山"
-        cell.rankLabel.text = "写真"
         cell.appTitleLabel.text = ""
         cell.contentLabel.text = "詳細"
         cell.rateLabel.text = "人気度"

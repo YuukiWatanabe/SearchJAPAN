@@ -12,7 +12,6 @@ import UIKit
 class DetailTableViewCell: UITableViewCell {
     
     let priceLabel = UILabel()
-    let rankLabel = UILabel()
     let appTitleLabel = UILabel()
     let contentLabel = UILabel()
     let rateLabel = UILabel()
@@ -28,11 +27,6 @@ class DetailTableViewCell: UITableViewCell {
         priceLabel.font = UIFont.systemFont(ofSize: 15)
         priceLabel.textColor = UIColor.gray
         self.addSubview(priceLabel)
-        
-        rankLabel.frame = CGRect(x:15, y:30, width:80, height:20)
-        rankLabel.font = UIFont.systemFont(ofSize: 15)
-        rankLabel.textColor = UIColor.gray
-        self.addSubview(rankLabel)
         
         appTitleLabel.frame = CGRect(x:130, y:5, width:150, height:20)
         appTitleLabel.font = UIFont.systemFont(ofSize: 12, weight: UIFontWeightBold)
@@ -60,9 +54,10 @@ class DetailTableViewCell: UITableViewCell {
         versionLabel.textColor = UIColor.gray
         self.addSubview(versionLabel)
         
+        iconImageView.image = UIImage(named: "Fuji.jpg")
         iconImageView.layer.cornerRadius = 10
         iconImageView.layer.masksToBounds = true
-        iconImageView.frame = CGRect(x:60, y:5, width:50, height:50)
+        iconImageView.frame = CGRect(x:5, y:35, width:100, height:100)
         self.addSubview(iconImageView)
     }
     
