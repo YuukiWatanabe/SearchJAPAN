@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133945551E4ABCC500672F71 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133945541E4ABCC500672F71 /* DetailTableViewCell.swift */; };
 		139E146B1E487AA900C952D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E146A1E487AA900C952D1 /* AppDelegate.swift */; };
 		139E146D1E487AA900C952D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139E146C1E487AA900C952D1 /* MainViewController.swift */; };
 		139E14701E487AA900C952D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139E146E1E487AA900C952D1 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133945541E4ABCC500672F71 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		139E14671E487AA900C952D1 /* SearchJAPAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchJAPAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139E146A1E487AA900C952D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139E146C1E487AA900C952D1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				139E146A1E487AA900C952D1 /* AppDelegate.swift */,
 				139E146C1E487AA900C952D1 /* MainViewController.swift */,
 				139E149E1E49960C00C952D1 /* DetailViewController.swift */,
+				133945541E4ABCC500672F71 /* DetailTableViewCell.swift */,
 				139E149C1E49934800C952D1 /* PrefectureList.swift */,
 				139E14981E487E8A00C952D1 /* RequestAPI.swift */,
 				139E14711E487AA900C952D1 /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133945551E4ABCC500672F71 /* DetailTableViewCell.swift in Sources */,
 				139E149D1E49934800C952D1 /* PrefectureList.swift in Sources */,
 				139E146D1E487AA900C952D1 /* MainViewController.swift in Sources */,
 				139E149F1E49960C00C952D1 /* DetailViewController.swift in Sources */,

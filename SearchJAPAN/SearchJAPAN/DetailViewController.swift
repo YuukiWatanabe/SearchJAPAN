@@ -11,14 +11,16 @@ import UIKit
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    private let customCellIdentifier: String = "CustomCell"
+    // UITableView を作成
+    let tableView = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
+        self.title = "観光スポット一覧"
         
-        self.title = "日本観光名所検索"
-        
-        // UITableView を作成
-        let tableView = UITableView()
+        tableView.register(DetailTableViewCell.self, forCellReuseIdentifier: customCellIdentifier)
         
         // サイズと位置調整
         tableView.frame = CGRect(
@@ -46,10 +48,16 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを作る
+        let cell = tableView.dequeueReusableCell(withIdentifier: customCellIdentifier, for: indexPath) as! DetailTableViewCell
         
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "detailCell")
-        cell.accessoryType = .detailButton
-        cell.textLabel?.text = "観光スポット情報"
+        cell.priceLabel.text = "富士山"
+        cell.rankLabel.text = "写真"
+        cell.appTitleLabel.text = ""
+        cell.contentLabel.text = "詳細"
+        cell.rateLabel.text = "人気度"
+        cell.reviewCountLabel.text = ""
+        cell.versionLabel.text = ""
+        cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         
         return cell
     }

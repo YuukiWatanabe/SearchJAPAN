@@ -23,7 +23,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         //試しにAPIをGETで叩く
         requestAPI.getRequest()
         
-        self.title = "観光名所一覧"
+        self.title = "都道府県一覧"
         
         // UITableView を作成
         let tableView = UITableView()
